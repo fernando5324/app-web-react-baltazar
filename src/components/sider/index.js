@@ -26,11 +26,10 @@ export default class index extends Component {
         console.log(collapsed);
         this.setState({ collapsed });
     };
-
     render() {
         const { collapsed } = this.state;
         return (
-         <Sider style={this.styleSider} collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
+          <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse} style={this.styleSider}>
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
             <Menu.Item key="1" icon={<PieChartOutlined />}>

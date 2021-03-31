@@ -13,7 +13,7 @@ export default function layoutComponent(component) {
     <Layout>
       <SiderContent />
       <React.StrictMode>
-        <Layout className="site-layout">
+        <Layout className="site-layout" style={{ minHeight: '100vh' }}>
           <HeaderContent />
           <Content className="site-layout-background"
           style={{
