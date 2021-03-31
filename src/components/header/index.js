@@ -1,17 +1,16 @@
-/** @format */
 
-import React, { Component } from "react";
+
+import React from "react";
 import { Layout, Menu, Grid } from "antd";
 import "./styles.css";
-const { SubMenu } = Menu;
 const { useBreakpoint } = Grid;
 const { Header } = Layout;
 
 
 const HeaderContent = () => {
-  const { md } = useBreakpoint();
+const { md } = useBreakpoint();
   return (
-    <Header className="site-layout-background" className="menuBar" style={{ padding: 0 }}>
+    <Header className="site-layout-background menuBar" style={{ padding: 0 }}>
       <div className=" menuCon">
       <div className="leftMenu">
       <Menu
