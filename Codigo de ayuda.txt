@@ -3,8 +3,15 @@ https://ant.design/docs/react/introduce
 https://pro.ant.design/docs/getting-started
 https://procomponents.ant.design/
 https://www.npmjs.com/package/react-router-dom
+https://es.reactjs.org/docs/faq-styling.html
+https://es.survivejs.com/react/advanced-techniques/styling-react/
 
 Npm usados:
 npm install --save react-router-dom
 npm install antd
 npm install --save  @ant-design/pro-layout
+
+
+
+Revisar 
+https://codesandbox.io/s/r60v6?file=/index.js

@@ -1,0 +1,4 @@
+.site-layout{
+    animation: 1s ease 0s 1 normal none running none;
+    transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}

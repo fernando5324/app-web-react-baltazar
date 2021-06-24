@@ -1,25 +1,25 @@
-
-.menuCon {
-  width: calc(100% - 150px);
-  float: left;
+.menu-content{
+  padding: 0 24px!important;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
-
-.menuCon .leftMenu {
-  float: left;
-}
-
-.menuCon .rightMenu {
+/* .menu-right{
   float: right;
 }
 
-
+.menu-left{
+  float: left;
+}
+ */
 @media (max-width: 767px) {
     .barsMenu {
       display: inline-block;
     }
   
-    .leftMenu,
-    .rightMenu {
+    .menu-left,
+    .menu-left {
       display: none;
     }
   
@@ -27,8 +27,8 @@
       margin-left: -20px;
     }
   
-    .menuCon .ant-menu-item,
-    .menuCon .ant-menu-submenu-title {
+    .menu-content .ant-menu-item,
+    .menu-content .ant-menu-submenu-title {
       padding: 1px 20px;
     }
   

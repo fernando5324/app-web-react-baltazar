@@ -1,29 +1,31 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import './styles.css';
-import  SiderContent  from "../../components/sider/index";
-import  HeaderContent from "../../components/header/index";
-import { Layout } from 'antd';
+/** @format */
+
+import React ,{Fragment} from "react";
+import "antd/dist/antd.css";
+import "./styles.css";
+import SiderContent from "../../components/sider/index";
+import HeaderContent from "../../components/header/index";
+import { Layout } from "antd";
 
 const { Content } = Layout;
 
 export default function layoutComponent(component) {
-  
   return (
     <Layout>
-      <SiderContent />
       <React.StrictMode>
-        <Layout className="site-layout" style={{ minHeight: '100vh' }}>
-          <HeaderContent />
-          <Content className="site-layout-background"
-          style={{
-            margin: '24px 16px',
-            padding: 24,
-            minHeight: 280,
-          }}>
-            {component}
-          </Content>
-        </Layout>
+        <SiderContent
+          contenido={
+            <Fragment>
+            <HeaderContent/>
+            <Content
+              className="site-layout-background"
+              style={{ padding: 24, minHeight: 360, margin: "0 16px" }}
+            >
+              {component}
+            </Content>
+            </Fragment>
+          }
+        />
       </React.StrictMode>
     </Layout>
   );

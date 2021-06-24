@@ -1,6 +1,5 @@
 /** @format */
 import React, { Fragment } from "react";
-import Navbar from "../components/navbar/index.js";
 import Footer from "../components/footer/index";
 import Sider from "../components/sider/index";
 
